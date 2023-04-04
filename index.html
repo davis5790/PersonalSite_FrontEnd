@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Davis Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Nicholas Davis</h1>
+        <h3>Tulsa, OK | (918) 629-3223 | davis.ne5790@gmail.com | Github | LinkedIn</h3>
+    </div>
+
+    <div class="section">
+       <h3>Summary</h3>
+       <p>Highly motivated graduate of Fullstack Academy’s DevOps Bootcamp. During the bootcamp I gained hands on experience with a wide variety of AWS services including IAM, EC2, and Lambda, as well as industry tools such as Ansible, Docker and Terraform. I believe the skills I learned in bootcamp, combined with my my professional experience working in the medical field will allow me to become a valuable member of your engineering team.</p> 
+    </div>
+
+    <div class="section">
+        <h3>Skills</h3>
+        <table>
+            <tr>
+                <td><b>Amazon Web Services: </b></td>
+                <td> IAM, S3, EC2, VPC, ECS, Lambda</td>
+            </tr>
+            <tr>
+                <td><b>Scripting/Coding: </b></td>
+                <td>Python, Boto3, Bash, AWS CLI, YAML, JSON, Javascript, C++</td>
+            </tr>
+            <tr>
+                <td><b>IaC and Version Control: </b></td>
+                <td>Terraform, Ansible, Git, AWS codecommit, AWS codebuild, AWS codedeploy</td>
+            </tr>
+            <tr>
+                <td><b>Web Frameworks and Development: </b></td>
+                <td>Python Flask, Express.js, Node.js</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h3>Projects</h3>
+        <div class="info-block">
+            <p><b>Secure Infrastructure Using Bastion Host</b> | Jan 2023</p>
+            <p>Terraform code defining infrastructure meeting AWS best practice of enabling developers to perform actions at a distance. Users can access internal servers located in a private subnet only from a bastion host in a public subnet.</p>
+            <ul>
+                <li>Based off of AWS Well-Architected Framework and best practices.</li>
+                <li>Gained further using Terraform and implementing infrastructure as code.</li>
+            </ul>
+        </div>
+        <div class="info-block">
+            <p><b>DevOps Capstone</b> | Oct 2022</p>
+            <p>I rewrote my groups capstone project completed as part of my DevOps bootcamp. A simple app to display weather data based on location information provided by users.</p>
+            <ul>
+                <li>Infrastructure is defined using Terraform. Terraform code is organized into individual modules to allow developers to easily change infrastructure based on defined variables.</li>
+                <li>Flask app is containerized via docker and used by AWS ECS to serve the app to users</li>
+                <li>Version control and CI/CD were carried out with Git and Jenkins</li>
+                <li>The original project implemented with typescript and AWS codecommit can be found here.</li>
+            </ul>
+        </div>
+        <div class="info-block">
+            <p><b>Flask Authorization</b> | Dec 2022</p>
+            <p>Implemented user authentication with a simple sign on app using Flask.</p>
+            <ul>
+                <li>Utilized Flask blueprints to help keep code organized.</li>
+                <li>Gained a further understanding of how to work with web frameworks.</li>
+                <li>Users are stored in a SQLAlchemy database.</li>
+            </ul>
+        </div>
+        <div class="info-block">
+            <p><b>Ansible Dynamic Inventory</b> | Feb 2023</p>
+            <p>Explored Ansible’s dynamic inventory plugin to manage resources that are autoscaled by AWS</p>
+            <ul>
+                <li>Successfully utilized Ansible’s aws_ec2 plugin to build playbooks capable of targeting and maintaining aws resources that are scaled in and out depending on traffic levels</li>
+                <li>Wrote a playbook that imitated the Ansible ping module to act as a test of whether or not my inventory file was behaving as expected.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Certifications</h3>
+        <div class="grid-container">
+            <div class="grid-item" id="content">AWS Certified Solutions Architect Associate</div>
+            <div class="grid-item" id="date">September 2022</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Education</h3>
+        <div class="grid-container education">
+            <div class="grid-item" id="content">FullStack Academy</div>
+            <div class="grid-item" id="date">November 2022</div>
+        </div>
+        <div class="grid-container major">
+            <div class="grid-item" id="content">Certification in DevOps</div>
+        </div>
+        <div class="grid-container education">
+            <div class="grid-item" id="content">University of Colorado Boulder</div>
+            <div class="grid-item" id="date">March 2020</div>
+        </div>
+        <div class="grid-container major">
+            <div class="grid-item" id="content">Bachelors in Applied Computer Science</div>
+        </div>
+        <div class="grid-container education">
+            <div class="grid-item" id="content">Oklahoma State University</div>
+            <div class="grid-item" id="date">May 2015</div>
+        </div>
+        <div class="grid-container major">
+            <div class="grid-item" id="content">Bachelor of Science in Physiology</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Experience</h3>
+        <div class="info-block">
+            <p>Post Acute Medical Specialty Hospital | Respiratory Therapist</p>
+            <p>Aug ‘21 – Current</p>
+            <ul>
+                <li>The only respiratory therapist present overnights, requiring confidence in my knowledge, and excellent time management and prioritization skills</li>
+                <li>Responsible for critically ill patients in an ICU setting, modifying ventilator settings based on several lab values</li>
+                <li>Maintained critical lab and respiratory equipment</li>
+            </ul>
+        </div>
+        <div class="info-block">
+            <p>Treehouses.io | Systems Engineering Intern</p>
+            <p>Sep '19 – Feb '20</p>
+            <ul>
+                <li>Wrote CLI commands to be used on a Raspbian OS on a Raspberry Pi</li>
+                <li>Containerized apps to be run on Raspberry pi</li>
+                <li>Contributed to Version Control and Pipeline maintenance.</li>
+            </ul>
+        </div>
+        <div class="info-block">
+            <p>Oklahoma Surgical Hospital | Respiratory Therapist</p>
+            <p>Aug '19 – Apr '21</p>
+            <ul>
+                <li>Maintained post surgical ventilator patients</li>
+                <li>Assisted one of the first doctors in the US performing Bronchial Thermoplasties, a procedure to surgically repair the lungs of severe asthma patients</li>
+            </ul>
+        </div>
+        <div class="info-block">
+            <p>Saint Francis Hospital | Lead Respiratory Therapist</p>
+            <p>Jul '16 – Jul '19</p>
+            <ul>
+                <li>Lead Therapist in the largest respiratory department in the state.</li>
+                <li>Responsible for maintaining airways in critical patients arriving to the ER</li>
+                <li>Coordinated large teams of personnel consisting of nurses, doctors, and ancillary staff to move ventilated patients throughout the hospital for various imaging and testing purposes</li>
+                <li>Acted as a mentor and resource to other therapists in the department</li>
+                <li>Maintained excellent routes of communication with doctors and nurses and other members of the treatment team to ensure the best results for our patients.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
