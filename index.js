@@ -2,7 +2,7 @@
 const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
 fetch(url)
 .then(response => {
-  value = data.json()
+  value = response.json()
   console.log(value)
   return value
 })
