@@ -17,7 +17,7 @@ document.getElementById("app").innerHTML = `
 `
 
 let counter = document.querySelector("span");
-counter.innerHTML = String(getCount())
+counter.innerHTML = getCount()
 
 const increaseButton = document.getElementById("mainButton");
 
