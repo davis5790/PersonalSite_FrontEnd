@@ -6,7 +6,7 @@ function getCount() {
     console.log(res)
     return res
   })
-  console.log(value)
+  return(value)
 }
 
 console.log(getCount())
