@@ -8,13 +8,6 @@ function getViewCount() {
 
 let counterState = String(getViewCount())
 
-document.getElementById("app").innerHTML = `
-<div>
- <p>Page Views: <span>0<span></p>
- <button id="mainButton">Increment!</button>
-</div>
-`
-
 let counter = document.querySelector("span");
 counter.innerHTML = counterState
 
@@ -23,5 +16,12 @@ const increaseButton = document.getElementById("mainButton");
 increaseButton.addEventListener("click", () => {
   counter.innerText = counterState += 1;
 });
+
+document.getElementById("app").innerHTML = `
+<div>
+ <p>Page Views: <span>0<span></p>
+ <button id="mainButton">Increment!</button>
+</div>
+`
 
 
