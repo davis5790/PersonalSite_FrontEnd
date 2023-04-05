@@ -6,7 +6,7 @@ function getViewCount() {
   .then(res=>{console.log(res)})
 }
 
-let counterState = getViewCount()
+let counterState = String(getViewCount())
 
 document.getElementById("app").innerHTML = `
 <div>
