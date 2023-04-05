@@ -2,7 +2,6 @@ function getCount() {
   const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
   value = fetch(url)
   .then(function data() {
-    console.log(data)
     return data.json()
   })
   .then(function res() {
