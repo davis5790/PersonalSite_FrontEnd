@@ -1,0 +1,40 @@
+.header {
+    text-align: center;
+}
+
+#content {
+    text-align: left;
+}
+
+#date {
+    text-align: right;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+  
+.grid-item {
+    text-align: right;
+}
+
+.info-block p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.info-block ul{
+    margin-top: 1px;
+}
+
+.education {
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+}
+
+.major {
+    margin-top: 1px;
+    padding-top: 0px;
+}
