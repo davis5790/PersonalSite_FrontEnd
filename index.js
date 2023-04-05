@@ -2,6 +2,7 @@ function getCount() {
   const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
   value = fetch(url)
   .then(function data() {
+    console.log(data)
     return data.json()
   })
   .then(function res() {
@@ -24,11 +25,7 @@ document.getElementById("app").innerHTML = `
 let counter = document.querySelector("span");
 counter.innerHTML = getCount()
 
-const increaseButton = document.getElementById("mainButton");
 
-increaseButton.addEventListener("click", () => {
-  counter.innerText = counterState += 1;
-});
 
 
 
