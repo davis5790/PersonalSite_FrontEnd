@@ -1,11 +1,12 @@
-
-const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
-fetch(url)
-.then(response => {
-  value = response.json()
-  console.log(value)
-  return value
-})
+function getCount() {
+  const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
+  fetch(url)
+  .then(response => {
+    value = response.json()
+    console.log(value)
+    return value
+  })
+}
 
 
 document.getElementById("app").innerHTML = `
@@ -16,7 +17,7 @@ document.getElementById("app").innerHTML = `
 `
 
 let counter = document.querySelector("span");
-counter.innerHTML = String(res)
+counter.innerHTML = String(getCount())
 
 const increaseButton = document.getElementById("mainButton");
 
