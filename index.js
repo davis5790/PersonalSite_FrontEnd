@@ -11,6 +11,8 @@ function getCount() {
   return value
 }
 
+console.log(getCount())
+
 
 document.getElementById("app").innerHTML = `
 <div>
