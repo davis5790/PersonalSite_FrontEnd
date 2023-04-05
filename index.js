@@ -3,7 +3,6 @@
 document.getElementById("app").innerHTML = `
 <div>
  <p>Page Views: <span>0<span></p>
- <button id="mainButton">Increment!</button>
 </div>
 `
 
@@ -12,7 +11,7 @@ fetch('https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-count
   .then(json => {
     var radr = JSON.stringify(json)
     document.querySelector("span").innerHTML = radr;
-  });
+});
 
 
 
