@@ -1,11 +1,14 @@
 function getCount() {
   const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
-  fetch(url)
-  .then(data=>{return data.json()})
-  .then(res=>{
+  value = fetch(url)
+  .then(function data() {
+    return data.json()
+  })
+  .then(function res() {
     console.log(res)
     return res
   })
+  return value
 }
 
 
