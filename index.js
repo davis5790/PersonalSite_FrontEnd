@@ -3,8 +3,8 @@ function getViewCount() {
 
   fetch(url)
   .then(data=>{return data.json()})
-  .then(res=>{console.log(res)})
-  return res
+  .then(res=>{console.log(res)
+  return res})
 }
 
 document.getElementById("app").innerHTML = `
