@@ -1,15 +1,3 @@
-function getCount() {
-  const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
-  value = fetch(url)
-  .then(data=>{return data.json()})
-  .then(res=>{
-    console.log(res)
-    return res
-  })
-  return(value)
-}
-
-console.log(getCount())
 
 
 document.getElementById("app").innerHTML = `
@@ -19,8 +7,12 @@ document.getElementById("app").innerHTML = `
 </div>
 `
 
-let counter = document.querySelector("span");
-counter.innerHTML = String(getCount())
+fetch('https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter')
+  .then(response => response.json())
+  .then(json => {
+    var radr = JSON.stringify(json)
+    document.querySelector("span").innerHTML = radr;
+  });
 
 
 
