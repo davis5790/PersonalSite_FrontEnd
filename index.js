@@ -20,7 +20,7 @@ document.getElementById("app").innerHTML = `
 `
 
 let counter = document.querySelector("span");
-counter.innerHTML = getCount()['PromisedResult']
+counter.innerHTML = String(getCount())
 
 
 
