@@ -1,10 +1,9 @@
-function getViewCount() {
-  const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
 
-  fetch(url)
-  .then(data=>{return data.json()})
-  .then(res=>{(res)})
-}
+const url = 'https://7ekl1v31ze.execute-api.us-east-1.amazonaws.com/default/view-counter'
+fetch(url)
+.then(data=>{return data.json()})
+.then(res=>{(res)})
+
 
 document.getElementById("app").innerHTML = `
 <div>
@@ -14,7 +13,7 @@ document.getElementById("app").innerHTML = `
 `
 
 let counter = document.querySelector("span");
-counter.innerHTML = String(getViewCount())
+counter.innerHTML = String(res)
 
 const increaseButton = document.getElementById("mainButton");
 
