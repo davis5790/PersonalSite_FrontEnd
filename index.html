@@ -48,6 +48,16 @@
     <div class="section">
         <h3>Projects</h3>
         <div class="info-block">
+            <p><b>Personal Resume Website</b> | Apr 2023</p>
+            <p>A personal website containing my resume hosted on AWS S3, maintained and updated by several AWS Lambda function written in Boto3, and 2 CI/CD pipelines, one the websites frontend and another for the backend code.</p>
+            <ul>
+                <li>Infrastructure defined and maintained using Terraform</li>
+                <li>CI/CD pipeline written using Github Actions</li>
+                <li>Pipeline includes QA and testing jobs where the lambda functions are linted and then tested using pylint and pytest</li>
+                <li>Page view counter implemented using DynamoDB and AWS Lambda</li>
+            </ul>
+        </div>
+        <div class="info-block">
             <p><b>Secure Infrastructure Using Bastion Host</b> | Jan 2023</p>
             <p>Terraform code defining infrastructure meeting AWS best practice of enabling developers to perform actions at a distance. Users can access internal servers located in a private subnet only from a bastion host in a public subnet.</p>
             <ul>
